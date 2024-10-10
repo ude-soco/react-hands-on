@@ -1,6 +1,6 @@
 # React.js Hands-on
 
-## 🚀 Get Started
+## 🚀 Get Started with React.js 1 Hands-on Template
 
 #### Step 1: Pre-requisites
 
@@ -31,7 +31,7 @@ Download and install the following software:
 - Open the project using a code editor.
 - In VSCode, click `Terminal` menu from the top menu and click `New Terminal`.
 
-- Switch between branches to view the different topics. Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
+- Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
 
   ```bash
   git checkout 1-react-1-hands-on-template
@@ -41,9 +41,13 @@ Download and install the following software:
   ```bash
   npm ci
   ```
-  - If you get an error, try typing the `npm install` or `npm install --force` command.
+  - If you get any error with npm, try typing the `npm install` or `npm install --force` command.
 - Run the following command in the terminal to start the server.
   ```bash
   npm run dev
   ```
-- Click this [link](http://localhost:5173/) to open the application using your default browser.
+- Click this [link](http://localhost:5173/) to open the application using your default browser. Below is a screenshot of the application.
+
+<p align="center">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-initial-state.png" alt="re-frame logo">
+</p>
