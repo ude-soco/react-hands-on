@@ -49,5 +49,5 @@ Download and install the following software:
 - Click this [link](http://localhost:5173/) to open the application using your default browser. Below is a screenshot of the application.
 
 <p align="center">
-    <img style="max-width: 400px; width:100%;" src="src/assets/preview-initial-state.png" alt="re-frame logo">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-final-state.png" alt="re-frame logo">
 </p>

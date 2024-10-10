@@ -4,9 +4,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 
 // * Todo component
 // * Task 3: Continue
-// * Call the props here
-const Todo = () => {
-
+const Todo = (props) => {
+  const { todos, handleDeleteTodo } = props;
   // * Task 3: Ends here
 
   return (
@@ -33,7 +32,7 @@ const Todo = () => {
                 <IconButton
                   color="error"
                   // * Task 4: Starts here
-                  
+                  onClick={() => handleDeleteTodo(todo.id)}
                   // * Task 4: Ends here
                 >
                   <DeleteIcon />
