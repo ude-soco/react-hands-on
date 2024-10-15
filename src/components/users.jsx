@@ -3,20 +3,22 @@ import { useNavigate } from "react-router-dom";
 import Grid from "@mui/material/Grid2";
 import { requestUserDetails } from "../utils/backend";
 import { Avatar, CircularProgress, Paper, Typography } from "@mui/material";
+// * Task 4: Starts here
 import { UserTodoContext } from "../App";
+// * Task 4: Continues below A
 
 export default function Users() {
-  // * Task 3
+  // * Task 3: Starts here
   const navigate = useNavigate();
-  // * Task 3
+  // * Task 3: Continues below A
   
-  // * Task 4
+  // * Task 4: Continues here A
   const { users, setUsers } = useContext(UserTodoContext);
-  // * Task 4
+  // * Task 4: Continues below B
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  // * Task 4
+  // * Task 4: Continues here B
   useEffect(() => {
     if (Boolean(users.length)) {
       setLoading(false);
@@ -32,13 +34,13 @@ export default function Users() {
         });
     }
   }, []);
-  // * Task 4
+  // * Task 4: Ends here
 
-  // * Task 3: Starts here
-  const handleViewTodos = (user) => {
-    navigate(`/users/${user.id}/todos`);
+  // * Task 3: Continues here A
+  const handleViewTodos = (userId) => {
+    navigate(`/users/${userId}/todos`);
   };
-  // * Task 3: Continues
+  // * Task 3: Continues below B
 
   return (
     <>
@@ -65,8 +67,8 @@ export default function Users() {
                       "&:hover": { boxShadow: 5 },
                       cursor: "pointer",
                     }}
-                    // * Task 3: Continues here
-                    onClick={() => handleViewTodos(user)}
+                    // * Task 3: Continues here B
+                    onClick={() => handleViewTodos(user.id)}
                     // * Task 3: End here
                   >
                     <Grid

@@ -13,19 +13,21 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate, useParams } from "react-router-dom";
 import AddTodo from "./add-todo";
+// * Task 5.1: Starts here
 import { UserTodoContext } from "../App";
+// * Task 5.1: Continues below A
 
 // * Todo component
 const Todo = () => {
   const navigate = useNavigate();
-  // * Task 5
+  // * Task 5.1: Continues below A
   const { users, setUsers } = useContext(UserTodoContext);
   const params = useParams();
   const userId = params.userId;
-  // * Task 5
+  // * Task 5.1: Ends here
   const [todos, setTodos] = useState([]);
 
-  // * Task 5
+  // * Task 5.2: Starts here
   useEffect(() => {
     let foundUser = users.find((user) => user.id == userId);
     if (foundUser) {
@@ -34,9 +36,9 @@ const Todo = () => {
       setTodos([]);
     }
   }, [userId]);
-  // * Task 5
+  // * Task 5.2: Ends here
 
-  // * Task 7
+  // * Task 7: Starts here
   useEffect(() => {
     return () => {
       setUsers((prevUsers) =>
@@ -45,8 +47,8 @@ const Todo = () => {
         )
       );
     };
-  }, [todos]);
-  // * Task 7
+  }, [todos.length]);
+  // * Task 7: Ends here
 
   const handleDeleteTodo = (id) => {
     let newTodos = todos.filter((todo) => todo.id !== id);
@@ -64,7 +66,7 @@ const Todo = () => {
     setTodos(newTodoList);
   };
 
-  // * Task 6
+  // * Task 6: Starts here
   const handleCompleteTodo = (event, id) => {
     const checked = event.target.checked;
     const newTodoList = todos.map((todo) =>
@@ -72,11 +74,12 @@ const Todo = () => {
     );
     setTodos(newTodoList);
   };
-  // * Task 6
+  // * Task 6: Continues below A
 
   const goBack = () => {
     navigate("/");
   };
+
   return (
     <>
       <Button startIcon={<ArrowBackIcon />} onClick={goBack}>
@@ -106,7 +109,9 @@ const Todo = () => {
                     <Grid size="auto">
                       <Checkbox
                         checked={todo.completed}
+                        // * Task 6: Continues here A
                         onChange={(e) => handleCompleteTodo(e, todo.id)}
+                        // * Task 6: Ends here
                       />
                     </Grid>
                     <Grid size="grow">
