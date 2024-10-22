@@ -34,7 +34,7 @@ Download and install the following software:
 - Switch between branches to view the different topics. Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
 
   ```bash
-  git checkout 1-react-1-hands-on-template
+  git checkout 4-react-2-hands-on-fullcode
   ```
 
 - Open the terminal and type the following command to install the node packages.
@@ -47,3 +47,11 @@ Download and install the following software:
   npm run dev
   ```
 - Click this [link](http://localhost:5173/) to open the application using your default browser.
+
+<p align="center">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-final-state-1.png" alt="re-frame logo">
+</p>
+
+<p align="center">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-final-state-2.png" alt="re-frame logo">
+</p>
