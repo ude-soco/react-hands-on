@@ -34,7 +34,7 @@ Download and install the following software:
 - Switch between branches to view the different topics. Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
 
   ```bash
-  git checkout 1-react-1-hands-on-template
+  git checkout 3-react-2-hands-on-template
   ```
 
 - Open the terminal and type the following command to install the node packages.
