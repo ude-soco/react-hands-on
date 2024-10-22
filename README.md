@@ -47,3 +47,7 @@ Download and install the following software:
   npm run dev
   ```
 - Click this [link](http://localhost:5173/) to open the application using your default browser.
+
+<p align="center">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-initial-state.png" alt="re-frame logo">
+</p>
