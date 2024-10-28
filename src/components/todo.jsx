@@ -47,7 +47,7 @@ const Todo = () => {
         )
       );
     };
-  }, [todos.length]);
+  }, [todos]);
   // * Task 7: Ends here
 
   const handleDeleteTodo = (id) => {
