@@ -20,7 +20,7 @@ export default function Users() {
 
   // * Task 4: Continues here B
   useEffect(() => {
-    if (Boolean(users.length)) {
+    if (users.length) {
       setLoading(false);
     } else {
       requestUserDetails()
